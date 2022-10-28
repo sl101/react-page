@@ -3,6 +3,7 @@ name: Build and Deploy React App to GitHub Pages
 on:
   push:
     branches: [main]
+
   jobs:
   build-and-deploy:
     name: Build and Deploy
@@ -22,5 +23,5 @@ on:
         run: |
           git config --global user.name 'Slava Zhevaha'
           git config --global user.email 'v.zhevaga@gmail.com'
-          git remote set-url origin https://x-access-token:${{ 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 }}@github.com/${{ sl101/react-page }}
+          git remote set-url origin https://x-access-token:${{ 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 }}@github.com/${{ sl101/react-page }}
           npm run deploy
