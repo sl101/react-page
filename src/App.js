@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { BgImage } from './BgImage';
+import NewYork from './media/NewYork.jpg';
+import NewYorkSmall from './media/NewYork_small.jpg';
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload HELLO SLAVA!!!.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
+			<h1>Progressive Image</h1>
+			<h2>Emulate 3G in devtools</h2>
+			<BgImage
+				src={NewYork}
+				placeholderSrc={NewYorkSmall}
+				width="700"
+				height="465"
+			/>
 		</div>
 	);
 }
